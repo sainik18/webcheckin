@@ -1,0 +1,54 @@
+
+.main-container h1{
+    padding: 20px;
+    text-align: center;
+    background-color: beige;
+}
+.pointer{
+    cursor: pointer;
+}
+.login100-form-btn, .wrap-input100{
+    width: 30%;
+}
+.select-seat-container h5, .meal-container h5{
+    padding: 10px;
+    margin: auto;
+    border-bottom: 1px solid gray;
+    display: block;
+    width: 25%;
+}
+.select-seat-container ul, .meal-container ul{
+    list-style-type: none;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+.select-seat-container ul li, .meal-container ul li{
+    width: 25%;
+    display: inline-block;
+    margin: 20px 3.75%;
+}
+.meal-container ul li{
+    width: 25%;
+    display: inline-block;
+    margin: 20px 3.75%;
+}
+.select-seat-container ul li .pic, .meal-container ul li img{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+.select-seat-container ul li .big-pic{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    -webkit-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0s;
+    z-index: 10;
+  }
+
+  /* .pic:hover + .big-pic{
+      width: 40%;
+  } */

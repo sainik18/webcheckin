@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Taca Airlines Web Checkin</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="zoom/jquery.wm-zoom-1.0.min.css">
+
+
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel='stylesheet' type="text/css" href="css/checkin.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="main-container mb-5">
+		<h1>Checkin Process</h2>
+		<div class="select-seat-container mb-3">
+			<h5 class="text-center mt-4">KINDLY SELECT A SEAT OF YOUR PREFERENCE</h5>
+            <ul class="seat-list">								
+				<li class="pointer a1"><p class="h3">A1</p><img class="pic" src="images/a1.jpeg"><img class="big-pic" src="images/a1.jpeg"></li>
+				<li class="pointer a2"><p class="h3">A3</p><img class="pic" src="images/a2.jpeg"><img class="big-pic" src="images/a2.jpeg"></li>
+				<li class="pointer a3"><p class="h3">A5</p><img class="pic" src="images/a3.jpeg"><img class="big-pic" src="images/a3.jpeg"></li>
+				<li class="pointer a4"><p class="h3">A2</p><img class="pic" src="images/a4.jpeg"><img class="big-pic" src="images/a4.jpeg"></li>
+				<li class="pointer a5"><p class="h3">A4</p><img class="pic" src="images/a5.jpeg"><img class="big-pic" src="images/a5.jpeg"></li>
+				<li class="pointer a6"><p class="h3">A6</p><img class="pic" src="images/a6.jpeg"><img class="big-pic" src="images/a6.jpeg"></li>
+            </ul>
+			<p class="mb-3 text-success text-center" id="seat-select-message"></p>
+		</div>
+
+		<div class="wm-zoom-container my-zoom">
+ 
+			<div class="wm-zoom-box">
+		
+				<img src="images/veg.jpeg" class="wm-zoom-default-img" alt="alternative text" data-hight-src="images/veg.jpeg" data-loader-src="images/a1.jpeg">
+		
+			</div>
+		
+		</div>
+
+		<div class="meal-container">
+			<h5 class="text-center mt-4">MEAL OPTION</h5>
+            <ul class="text-center meal-list zoom-section">
+								<li class="pointer"><p class="h3 text-left">Vegetarian</p><img src="images/veg.jpeg"></li>
+
+				<li class="pointer"><p class="h3 text-left">Non-Vegetarian</p><img src="images/non-veg.jpeg"></li>
+            </ul>
+			<p class="mb-3 text-success text-center" id="meal-select-message"></p>
+		</div>
+		<div class="meal-container">
+			<h5 class="text-center mt-4">EXTRA BAGGAGE IF ANY</h5>
+            <div class="wrap-input100 validate-input mx-auto my-3" data-validate = "Valid email is required: ex@abc.xyz">
+				<input class="input100" id="baggage-input" type="number">
+				<span class="focus-input100"></span>
+				<span class="label-input100">Extra Baggage in Kgs</span>
+			</div>
+			<p class="mb-3 text-success text-center" id="baggage-select-message"></p>
+
+		</div>
+		<div class="meal-container">
+			<h5 class="text-center mt-4">AND KINDLY PROVIDE IN YOUR EMAIL ADDRESS</h5>
+            <div class="wrap-input100 validate-input mx-auto my-3" data-validate = "Valid email is required: ex@abc.xyz">
+				<input class="input100" type="text" name="email">
+				<span class="focus-input100"></span>
+				<span class="label-input100">Email Id</span>
+			</div>
+		</div>
+		<div class="">
+			<button class="login100-form-btn mx-auto my-4" id="submit-btn" data-toggle="modal" data-target="#myModal">
+				Submit
+			</button>
+		</div>
+			<!-- The Modal -->
+			<div class="modal" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content p-4">
+
+				<!-- Modal Header -->
+			
+				<!-- Modal body -->
+				<div class="modal-body">
+					<p class="h4">Your boarding pass will be mailed to your Email Address</p>
+					<p class="h3 text-center text-success mt-5">THANK YOU</p>
+				</div>
+
+				<!-- Modal footer -->
+			
+				</div>
+			</div>
+			</div>
+	</div>
+	
+	
+
+	
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+
+<script type="text/javascript" src="zoom/jquery.wm-zoom-1.0.min.js"></script>
+
+
+	<script type="text/javascript" src="//vhss-d.oddcast.com/vhost_embed_functions_v2.php?acc=6884526&js=1"></script>
+<script type="text/javascript">AC_VHost_Embed(6884526,300,400,'',1,1, 2639277, 0,1,0,'ddc910d65e7e966a88c4eded3fcc7d96',0);</script>
+	
+	<script src="js/checkin.js"></script>
+<script type="text/javascript" >
+$(document).ready(function(){
+    $('.my-zoom').WMZoom();
+});
+</script>
+</body>
+</html>

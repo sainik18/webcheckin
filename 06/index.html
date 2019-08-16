@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Taca Airlines Web Checkin</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body style="background-color: #666666;">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form mx-auto">
+					<img src="images/taca-airlines-logo.jpg" >
+					<span class="login100-form-title p-b-43">
+						Please put in your Surname, First Name and PNR Number
+					</span>
+					
+					
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" name="email">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Surname</span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" name="pass">
+						<span class="focus-input100"></span>
+						<span class="label-input100">First Name</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" >
+						<input class="input100" type="text" name="pass">
+						<span class="focus-input100"></span>
+						<span class="label-input100">PNR Number</span>
+					</div>
+
+			
+
+					<div class="container-login100-form-btn">
+						<button type="button" class="login100-form-btn" id="submit-btn">
+							Submit
+						</button>
+					</div> 
+				</form>
+
+				</div>
+			</div>
+		</div>
+	</div>	
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+<!-- 03 more smile male -->
+<script type="text/javascript" src="//vhss-d.oddcast.com/vhost_embed_functions_v2.php?acc=6862607&js=1"></script>
+<script type="text/javascript">AC_VHost_Embed(6862607,300,400,'',1,1, 2656107, 0,1,0,'5222118e086c0857600264e72c87eb2d',0);</script>
+
+	<script src="js/main.js"></script>
+	
+	<script>
+	
+		(function ($) {
+			"use strict";
+			/*==================================================================
+			[ Focus Contact2 ]*/
+		$('#submit-btn').on('click', function(){
+			var isEmpty = true;
+				$('.input100').each(function(){
+					if($(this).val().trim() != "") {
+						isEmpty = false;
+					}
+					else {
+						$(this).removeClass('has-val');
+						isEmpty = true;;
+					} 
+				});
+				if(!isEmpty){
+					window.location.href='checkin.html';
+				}
+				
+		})
+		})(jQuery);
+	
+	</script>
+
+
+</body>
+</html>
