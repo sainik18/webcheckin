@@ -360,18 +360,18 @@
 
 	<script>
 		$( document ).ready(function() {
-		var fileInterval =setInterval(function() {
-			console.log($.isFunction(sayText));
-			if ($.isFunction(sayText) ) {
-				setTimeout(function(){
-				sayText('Please select a seat',2,1,3);
-				},1500);
-				// do something
-				clearInterval(fileInterval); // clear interval
-			}
-		}, 1000);
-		
-	});
+			var fileInterval =setInterval(function() {
+				console.log($.isFunction(sayText));
+				if ($.isFunction(sayText) ) {
+					setTimeout(function(){
+					sayText('Please select a seat',2,1,3);
+					},1500);
+					// do something
+					clearInterval(fileInterval); // clear interval
+				}
+			}, 1000);
+			
+		});
 	</script>
 
 
