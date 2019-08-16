@@ -113,13 +113,11 @@
 					msg.text = thankYou;
 
 					msg.onend = function(e, speechSynthesis) {
-					console.log('Finished in ' + event.elapsedTime + ' seconds.');
 					speechSynthesis.stop();
 				}
 				//speechSynthesis.speak(msg); 
 
 				}else{
-					console.log('isEmpty');
 					$('#myModal').modal('hide');
 				}
 				

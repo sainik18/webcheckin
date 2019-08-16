@@ -35,7 +35,6 @@
         msg.text = seatMessage;
 
         msg.onend = function(e, speechSynthesis) {
-        console.log('Finished in ' + event.elapsedTime + ' seconds.');
         speechSynthesis.stop();
 
         };
@@ -76,7 +75,6 @@
             msg.text = baggageMsg;
 
             msg.onend = function(e, speechSynthesis) {
-            console.log('Finished in ' + event.elapsedTime + ' seconds.');
             speechSynthesis.stop();
 
     };
@@ -102,16 +100,13 @@
             msg.text = assistanceMessage;
 
             msg.onend = function(e, speechSynthesis) {
-            console.log('Finished in ' + event.elapsedTime + ' seconds.');
             speechSynthesis.stop(); 
             }
             //speechSynthesis.speak(msg); 
         });
 
         $('#meal-submit-btn').on('click', function(){
-            console.log('clikced me meal');
             if(clickedRadio){
-                console.log('clikced me meal here true');
                 window.location.href='baggage.html';
             }
         });

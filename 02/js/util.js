@@ -38,7 +38,6 @@ $(function(){
         msg.text = text;
   
         msg.onend = function(e, speechSynthesis) {
-          console.log('Finished in ' + event.elapsedTime + ' seconds.');
           speechSynthesis.stop();
   
         };
@@ -70,7 +69,6 @@ $(function(){
         msg.text = text;
   
         msg.onend = function(e, speechSynthesis) {
-          console.log('Finished in ' + event.elapsedTime + ' seconds.');
           speechSynthesis.stop();
   
         };
@@ -96,7 +94,6 @@ $(function(){
         msg.text = text;
   
         msg.onend = function(e, speechSynthesis) {
-          console.log('Finished in ' + event.elapsedTime + ' seconds.');
           speechSynthesis.stop();
   
         };
@@ -119,7 +116,6 @@ $(function(){
     let seatType = ' that is window seat';
     let seatMessage;
     $('.seat-list li').click(function() {
-        console.log('clicked me');
         $('.seat-list li img').css('border-color','gray');
         $(this).children('img').css('border-color','red');
         seatNumber =  $(this).children('p').text();
@@ -134,7 +130,6 @@ $(function(){
     let seatType = ' that is window seat';
     let seatMessage;
     $('.seat-list li').click(function() {
-        console.log('clicked me');
         $('.seat-list li img').css('border-color','gray');
         $(this).children('img').css('border-color','red');
         seatNumber =  $(this).children('p').text();
@@ -180,7 +175,6 @@ $(function(){
         let seatType = ' that is window seat';
         let seatMessage;
         $('.seat-list li').click(function() {
-            console.log('clicked me');
             $('.seat-list li img').css('border-color','gray');
             $(this).children('img').css('border-color','red');
             seatNumber =  $(this).children('p').text();
@@ -194,7 +188,6 @@ $(function(){
         msg.text = seatMessage;
   
         msg.onend = function(e, speechSynthesis) {
-          console.log('Finished in ' + event.elapsedTime + ' seconds.');
           speechSynthesis.stop();
   
         };
@@ -219,7 +212,6 @@ $(function(){
         msg.text = mealMessage;
 
         msg.onend = function(e, speechSynthesis) {
-        console.log('Finished in ' + event.elapsedTime + ' seconds.');
         speechSynthesis.stop();
 
         };
@@ -277,7 +269,6 @@ $(function(){
         msg.text = baggageMsg;
 
         msg.onend = function(e, speechSynthesis) {
-        console.log('Finished in ' + event.elapsedTime + ' seconds.');
         speechSynthesis.stop();
 
         };

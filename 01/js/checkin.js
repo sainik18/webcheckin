@@ -23,7 +23,6 @@
     // let seatType = ' that is window seat';
     // let seatMessage;
     // $('.seat-list li').click(function() {
-    //     console.log('clicked me');
     //     $('.seat-list li img').css('border-color','gray');
     //     $(this).children('img').css('border-color','red');
     //     seatNumber =  $(this).children('p').text();
@@ -94,9 +93,7 @@
     });
 
     $('#meal-submit-btn').on('click', function(){
-        console.log('clikced me meal');
         if(clickedRadio){
-            console.log('clikced me meal here true');
             window.location.href='baggage.html';
         }
     });
