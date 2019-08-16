@@ -30,25 +30,23 @@
 <body>
 	
 	<div class="main-container mb-5">
-		<h1>Checkin Process</h2>
+		<h1>Special Assistance</h2>
 		<div class="meal-container">
-			<h5 class="text-center mt-4">EXTRA BAGGAGE IF ANY</h5>
-            <div class="wrap-input100 validate-input mx-auto my-3" data-validate = "Valid email is required: ex@abc.xyz">
-				<input class="input100" id="baggage-input" type="number">
-				<span class="focus-input100"></span>
-				<span class="label-input100">Extra Baggage in Kgs</span>
+			<h5 class="text-center mt-4 text-uppercase">Would you need any special assistance at the airport field </h5>
+            <div class="radio d-flex justify-content-center">
+				<label class="mr-3"><input type="radio" name="assistance" value="yes">Yes</label>
+				<label><input type="radio" name="assistance"  value="no">No</label>
 			</div>
-			<p class="mb-3 text-success text-center" id="baggage-select-message"></p>
+			<p class="mb-3 text-success text-center" id="assistance-select-message"></p>
 		</div>
 		<div class="">
-			<button class="login100-form-btn mx-auto my-4" id="seat-submit-btn" onclick="window.location.href='email.html'">
+			<button type="button" class="login100-form-btn mx-auto my-4" id="meal-submit-btn">
 				Submit
 			</button>
 		</div>
+			
 	</div>
 	
-	
-
 	
 	
 <!--===============================================================================================-->
@@ -67,29 +65,28 @@
 <!--===============================================================================================-->
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-<!-- <script type="text/javascript" src="//vhss-d.oddcast.com/vhost_embed_functions_v2.php?acc=6884526&js=1"></script>
-<script type="text/javascript">AC_VHost_Embed(6884526,188,250,'',1,1, 2639279, 0,1,0,'caea1cecafb8dda7e56a3457fbd47d55',0);</script> -->
-<!-- 03 smile voice male -->
+	
+<!-- 02 neutral voice male -->
 <script type="text/javascript" src="//vhss-d.oddcast.com/vhost_embed_functions_v2.php?acc=6862607&js=1"></script>
 <script type="text/javascript">AC_VHost_Embed(6862607,300,400,'',1,1, 2656086, 0,1,0,'a74f46ad3b5d42213f55eea8c4034e67',0);</script>
 
 	<script src="js/checkin.js"></script>
 
 	<script>
-		$( document ).ready(function() {
-		var fileInterval =setInterval(function() {
-			console.log($.isFunction(sayText));
-			if ($.isFunction(sayText) ) {
-				setTimeout(function(){
-				sayText('Will you carry any extra baggage on this flight',2,1,3);
-				},1500);
-				// do something
-				clearInterval(fileInterval); // clear interval
-			}
-		}, 1000);
-		
-	});
-</script>
+			$( document ).ready(function() {
+			var fileInterval =setInterval(function() {
+				console.log($.isFunction(sayText));
+				if ($.isFunction(sayText) ) {
+					setTimeout(function(){
+					sayText('Would you need any special assistance at the airport',2,1,3);
+					},1500);
+					// do something
+					clearInterval(fileInterval); // clear interval
+				}
+			}, 1000);
+			
+		});
+    </script>
 
 
 </body>
