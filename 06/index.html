@@ -99,7 +99,6 @@
 
 		$(document).ready(function () {
 			var fileInterval = setInterval(function () {
-				console.log($.isFunction(sayText));
 				if ($.isFunction(sayText)) {
 					setTimeout(function () {
 						sayText('Please put in your surname first name and PNR Number', 2, 1, 3);

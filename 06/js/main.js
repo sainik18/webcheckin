@@ -13,13 +13,6 @@
             }
         })    
     });
-
-    $(document).ready(function(){
-        console.log('hello');
-        setTimeout(function(){ 
-            sayText("Please put in your surname firstname and P N R number",2,1,3);
-        }, 10000); 
-    });
         
 
 })(jQuery);
