@@ -43,7 +43,7 @@
         mealMessage = genericMealMessage + mealType + mealEndMsg;
         displayText(mealMessage, '#meal-select-message');  
         stopSpeech();
-        sayText(seatMessage,2,1,3);
+        sayText(mealMessage,2,1,3);
     });
 
     // baggage text message
@@ -56,7 +56,7 @@
             baggageMsg = baggageGenericMsg + extraWeight + ' kg';
             displayText(baggageMsg, '#baggage-select-message'); 
             stopSpeech();
-            sayText(seatMessage,2,1,3);    
+            sayText(baggageMsg,2,1,3);    
         }
         else {
             
@@ -76,7 +76,7 @@
            clickedRadio = true;
            displayText(assistanceMessage, '#assistance-select-message');
            stopSpeech();
-           sayText(seatMessage,2,1,3);    
+           sayText(assistanceMessage,2,1,3);    
      });
  
      $('#meal-submit-btn').on('click', function(){
