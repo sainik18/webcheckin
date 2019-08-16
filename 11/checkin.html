@@ -360,6 +360,21 @@
 
 	<script src="js/checkin.js"></script>
 
+	<script>
+		$( document ).ready(function() {
+			var fileInterval =setInterval(function() {
+				if ($.isFunction(sayText) ) {
+					setTimeout(function(){
+					sayText('Please select a seat',1,1,3);
+					},1500);
+					// do something
+					clearInterval(fileInterval); // clear interval
+				}
+			}, 1000);
+			
+		});
+	</script>
+
 
 </body>
 </html>
