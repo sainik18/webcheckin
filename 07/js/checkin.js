@@ -70,8 +70,7 @@
    $('#meal-submit-btn').on('click', function(){
        console.log('clikced me meal');
        if(clickedRadio){
-           console.log('clikced me meal here true');
-           window.location.href='baggage.html';
+        $("#mainSection").load("baggage.html");
        }
    });
 })(jQuery);

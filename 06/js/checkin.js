@@ -76,7 +76,6 @@
     });
 
     $('#meal-submit-btn').on('click', function(){
-        console.log('clikced me meal');
         if(clickedRadio){
             $("#mainSection").load("baggage.html");
         }
