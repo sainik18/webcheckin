@@ -1,22 +1,22 @@
 <div class="main-container mb-5">
-		<h1>Checkin Process</h2>
+		<h1>Special Assistance</h2>
 		<div class="meal-container">
-			<h5 class="text-center mt-4 text-uppercase">Meal Option</h5>
-            <ul class="text-center meal-list">
-				<li class="pointer"><p class="h3 text-left">Vegetarian</p><img src="images/veg.jpg"></li>
-				<li class="pointer"><p class="h3 text-left">Non-Vegetarian</p><img src="images/non-veg.jpg"></li>
-            </ul>
-			<p class="mb-3 text-success text-center" id="meal-select-message"></p>
+			<h5 class="text-center mt-4 text-uppercase">Would you need any special assistance at the airport field </h5>
+            <div class="radio d-flex justify-content-center">
+				<label class="mr-3"><input type="radio" name="assistance" value="yes">Yes</label>
+				<label><input type="radio" name="assistance"  value="no">No</label>
+			</div>
+			<p class="mb-3 text-success text-center" id="assistance-select-message"></p>
 		</div>
 		<div class="">
-			<button type="button" class="login100-form-btn mx-auto my-4 meal-btn">
+			<button type="button" class="login100-form-btn mx-auto my-4" id="meal-submit-btn">
 				Submit
 			</button>
 		</div>
 			
 	</div>
 	
-	
+
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel='stylesheet' type="text/css" href="css/checkin.css">
@@ -28,16 +28,12 @@
 				console.log($.isFunction(sayText));
 				if ($.isFunction(sayText) ) {
 					setTimeout(function(){
-					sayText('Please select a meal for this flight',1,1,3);
+					sayText('Would you need any special assistance at the airport',1,1,3);
 					},1000);
 					// do something
 					clearInterval(fileInterval); // clear interval
 				}
 			}, 500);
-
-			$(".meal-btn").click(function(){
-			$("#mainSection").load("special-assistance.html");
-		});
 			
 		});
-		</script>
+    </script>
