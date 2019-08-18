@@ -94,7 +94,7 @@
 
     $('#meal-submit-btn').on('click', function(){
         if(clickedRadio){
-            window.location.href='baggage.html';
+            $("#mainSection").load("baggage.html");
         }
     });
 
