@@ -1,35 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Taca Airlines Web Checkin</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel='stylesheet' type="text/css" href="css/checkin.css">
-<!--===============================================================================================-->
-</head>
-<body>
-	
-	<div class="main-container mb-5">
+<div class="main-container mb-5">
 		<h1>Checkin Process</h2>
 		<div class="meal-container">
 			<h5 class="text-center mt-4">EXTRA BAGGAGE IF ANY</h5>
@@ -41,40 +10,22 @@
 			<p class="mb-3 text-success text-center" id="baggage-select-message"></p>
 		</div>
 		<div class="">
-			<button class="login100-form-btn mx-auto my-4" id="seat-submit-btn" onclick="window.location.href='email.html'">
+			<button class="login100-form-btn mx-auto my-4" id="seat-submit-btn">
 				Submit
 			</button>
 		</div>
 	</div>
 	
-	
-
-	
-	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-<!-- <script type="text/javascript" src="//vhss-d.oddcast.com/vhost_embed_functions_v2.php?acc=6884526&js=1"></script>
-<script type="text/javascript">AC_VHost_Embed(6884526,188,250,'',1,1, 2639276, 0,1,0,'671e6177041dc76f0b30745ac2a3d4b9',0);</script> -->
-<!-- 07 more smile female -->
-<script type="text/javascript" src="//vhss-d.oddcast.com/vhost_embed_functions_v2.php?acc=6862607&js=1"></script>
-<script type="text/javascript">AC_VHost_Embed(6862607,300,400,'',1,1, 2656111, 0,1,0,'b713dfa3d4cb4de9ec595b0c2f298fbf',0);</script>
-
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel='stylesheet' type="text/css" href="css/checkin.css">
 	<script src="js/checkin.js"></script>
 
-
-</body>
-</html>
+	<script>
+		$( document ).ready(function() {
+			$('#seat-submit-btn').on('click', function(){
+            	 $("#mainSection").load("email.html");
+     		});
+			
+		});
+    </script>
