@@ -8,11 +8,26 @@
 			</div>
 			<p class="mb-3 text-success text-center" id="assistance-select-message"></p>
 		</div>
+
+		<div class="meal-container" style="margin-top:50px;">
+			<h5 class="text-center mt-4">EXTRA BAGGAGE IF ANY</h5>
+            <div class="wrap-input100 validate-input mx-auto my-3" data-validate = "Valid email is required: ex@abc.xyz">
+				<input class="input100" id="baggage-input" type="number">
+				<span class="focus-input100"></span>
+				<span class="label-input100">Extra Baggage in Kgs</span>
+			</div>
+			<p class="mb-3 text-success text-center" id="baggage-select-message"></p>
+		</div>
 		<div class="">
-			<button type="button" class="login100-form-btn mx-auto my-4" id="meal-submit-btn">
+			<button class="login100-form-btn mx-auto my-4" id="seat-submit-btn">
 				Submit
 			</button>
 		</div>
+		<!-- <div class="">
+			<button type="button" class="login100-form-btn mx-auto my-4" id="meal-submit-btn">
+				Submit
+			</button>
+		</div> -->
 			
 	</div>
 	
@@ -36,4 +51,24 @@
 			}, 500);
 			
 		});
-    </script>
+	</script>
+	
+	<script>
+		$( document ).ready(function() {
+		var fileInterval =setInterval(function() {
+			console.log($.isFunction(sayText));
+			if ($.isFunction(sayText) ) {
+				setTimeout(function(){
+				sayText('Will you carry any extra baggage on this flight',1,1,3);
+				},1000);
+				// do something
+				clearInterval(fileInterval); // clear interval
+			}
+		}, 500);
+
+		$('#seat-submit-btn').on('click', function(){
+			 $("#mainSection").load("email.html");
+		 });
+		
+	});
+</script>
