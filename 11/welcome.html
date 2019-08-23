@@ -46,16 +46,23 @@
 	
 		$(document).ready(function () {
 	
-			var fileInterval = setInterval(function () {
-				console.log($.isFunction(sayText));
+			// var fileInterval = setInterval(function () {
+			// 	console.log($.isFunction(sayText));
+			// 	if ($.isFunction(sayText)) {
+			// 		setTimeout(function () {
+			// 			sayText('Please put in your surname first name and PNR Number', 1, 1, 3);
+			// 		}, 1000);
+			// 		// do something
+			// 		clearInterval(fileInterval); // clear interval
+			// 	}
+			// }, 1000);
+
+			$('.limiter').click(function(){
 				if ($.isFunction(sayText)) {
-					setTimeout(function () {
-						sayText('Please put in your surname first name and PNR Number', 1, 1, 3);
-					}, 1000);
-					// do something
-					clearInterval(fileInterval); // clear interval
-				}
-			}, 1000);
+            		sayText('Please put in your surname first name and PNR Number', 1, 1, 3);
+            		$(".limiter").off("click");
+				};
+        	});
 	
 		});
 	
