@@ -73,6 +73,10 @@
          displayText(assistanceMessage, '#assistance-select-message');
          stopSpeech();
          sayText(assistanceMessage,1,1,3); 
+
+         setTimeout(function(){
+            sayText('Will you carry any extra baggage on this flight',1,1,3);
+        }, 2000);
    });
 
    $('#meal-submit-btn').on('click', function(){

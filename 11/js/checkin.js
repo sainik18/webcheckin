@@ -57,6 +57,10 @@
             displayText(baggageMsg, '#baggage-select-message');
             stopSpeech();
             sayText(baggageMsg,1,1,3); 
+            
+            setTimeout(function(){
+                sayText('Will you carry any extra baggage on this flight',1,1,3);
+            }, 2000);
         }
     });
 
