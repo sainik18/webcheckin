@@ -112,7 +112,7 @@ $(function(){
 //  avatar female audio on load in first page
 setTimeout(function(){ 
     console.log('now');
-    sayText("Please put in your surname firstname and P N R number",1,1,3);
+    sayText("Please put in your surname firstname and P N R number",9,1,4);
 }, 10000);
 
  //  avatar male audio on load in first page
@@ -184,7 +184,7 @@ setTimeout(function(){
         mealType =  $(this).children('p').text();
         mealMessage = genericMealMessage + mealType + mealEndMsg;
         stopSpeech();
-        sayText(mealMessage,1,1,3);    
+        sayText(mealMessage,9,1,4);    
     });
 
 // simple audio for seat selection
@@ -263,7 +263,7 @@ setTimeout(function(){
                 baggageMsg = baggageGenericMsg + extraWeight + ' kg';
                 displayText(baggageMsg, '#baggage-select-message');
                 stopSpeech();
-                sayText(baggageMsg,1,1,3); 
+                sayText(baggageMsg,9,1,4); 
             }
         });
 

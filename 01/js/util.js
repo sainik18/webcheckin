@@ -166,7 +166,7 @@ $(function(){
         mealType =  $(this).children('p').text();
         mealMessage = genericMealMessage + mealType + mealEndMsg;
         stopSpeech();
-        //sayText(mealMessage,1,1,3);    
+        //sayText(mealMessage,9,1,4);    
     });
 
 // simple audio for seat selection
@@ -242,7 +242,7 @@ $(function(){
                 baggageMsg = baggageGenericMsg + extraWeight + ' kg';
                 displayText(baggageMsg, '#baggage-select-message');
                 stopSpeech();
-                //sayText(baggageMsg,1,1,3); 
+                //sayText(baggageMsg,9,1,4); 
             }
         });
 
@@ -300,7 +300,7 @@ $(function(){
         assistanceType = $("input[name='assistance']:checked").val();
         assistanceMessage = genericAssistanceMessage + assistanceType + assistanceEndMess;
         stopSpeech();
-        //sayText(mealMessage,1,1,3);
+        //sayText(mealMessage,9,1,4);
     });
 
 // simple audio for assistance selection

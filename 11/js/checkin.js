@@ -28,7 +28,7 @@
        seatMessage = genericSeatMessage + seatNumber;
        displayText(seatMessage, '#seat-select-message');
        stopSpeech();
-       sayText(seatMessage,1,1,3);    
+       sayText(seatMessage,9,1,4);    
    });
 
      // male food meal avatar
@@ -43,7 +43,7 @@
          mealMessage = genericMealMessage + mealType + mealEndMsg;
          displayText(mealMessage, '#meal-select-message');
          stopSpeech();
-         sayText(mealMessage,1,1,3);    
+         sayText(mealMessage,9,1,4);    
      });
 
     // baggage text message
@@ -56,10 +56,10 @@
             baggageMsg = baggageGenericMsg + extraWeight + ' kg';
             displayText(baggageMsg, '#baggage-select-message');
             stopSpeech();
-            sayText(baggageMsg,1,1,3); 
+            sayText(baggageMsg,9,1,4); 
             
             setTimeout(function(){
-                sayText('Will you carry any extra baggage on this flight',1,1,3);
+                sayText('Will you carry any extra baggage on this flight',9,1,4);
             }, 2000);
         }
     });
@@ -76,7 +76,7 @@
            clickedRadio = true;
            displayText(assistanceMessage, '#assistance-select-message');
            stopSpeech();
-           sayText(assistanceMessage,1,1,3); 
+           sayText(assistanceMessage,9,1,4); 
      });
  
      $('#meal-submit-btn').on('click', function(){
