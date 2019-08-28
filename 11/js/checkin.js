@@ -57,10 +57,6 @@
             displayText(baggageMsg, '#baggage-select-message');
             stopSpeech();
             sayText(baggageMsg,9,1,4); 
-            
-            setTimeout(function(){
-                sayText('Will you carry any extra baggage on this flight',9,1,4);
-            }, 2000);
         }
     });
 
@@ -77,6 +73,10 @@
            displayText(assistanceMessage, '#assistance-select-message');
            stopSpeech();
            sayText(assistanceMessage,9,1,4); 
+
+           setTimeout(function(){
+            sayText('Will you carry any extra baggage on this flight',9,1,4);
+        }, 2000);
      });
  
      $('#meal-submit-btn').on('click', function(){
